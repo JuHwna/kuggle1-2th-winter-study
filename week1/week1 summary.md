@@ -31,3 +31,6 @@
 |ML 알고리즘|sklearn.cluster|비지도 클러스터링 알고리즘 제공(K-평균, 계층형,DBSCAN 등|
 |유틸리티|sklearn.pipeline|피처 처리 등의 변환과 ML 알고리즘 학습, 예측 등을 함께 묶어서 실행할 수 있는 유틸리티 제공|
 
+### 2) Model Selection
+
+![model selection](https://user-images.githubusercontent.com/49123169/72659554-b3db5f00-3a04-11ea-96cf-d5ee1e346a1a.PNG)
