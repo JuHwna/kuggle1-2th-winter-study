@@ -59,3 +59,8 @@
  
  - Binarizer : threshold 변수를 특정 값으로 설정하고 임계값을 조절할 수 있는 메소드??
  - 임계값이 클수록 정밀도가 올라가는 대신 재현율이 떨어진다
+ 
+ ![임계값](https://user-images.githubusercontent.com/49123169/72660067-d7ee6e80-3a0b-11ea-92a0-ab8ed2702a73.PNG)
+
+
+## 4. F1 Score
