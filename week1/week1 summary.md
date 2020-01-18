@@ -1,4 +1,4 @@
-#
+# 2. 사이킷런으로 시작하는 머신러닝
 ## 1. 사이킷런의 설명
 
 ![scikitlearn method](https://user-images.githubusercontent.com/49123169/72659123-3c0a3600-39fe-11ea-9f33-d2ea5241fcfa.PNG)
