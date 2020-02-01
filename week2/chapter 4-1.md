@@ -27,3 +27,23 @@
       - **min_weight_fraction_leaf**: min_samples_leaf와 비슷하지만 가중치가 부여된 전체 샘플 수에서의 비율
       - **max_leaf_nodes**: 리프 노드의 최대수 
       - **max_features**: 각 노드에서 분할에 사용할 특성의 최대 수
+~~~
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import accuracy_score
+df_clf=DecisionTreeClassifier(random_state=156)
+df_clf.fit(x_train,y_train)
+pred=df_clf.predict(x_test)
+accuracy=accracy_score(y_test,pred)
+~~~
+
+## Feature_importance
+ - 결정트리는 균일도를 기준으로 어떠한 속성을 규칙으로 만드냐가 중요함
+ - 몇 개의 중요한 피처를 통해 좀 더 명확한 규칙을 생성할 수 있고 간결한 모형과 이상값에 강한 모형을 만들 수 있음
+
+~~~
+import seaborn as sns
+importances_values=best_df_clf.feature_importances_
+importances=pd.Series(importances_values,index=X_train,columns)
+top20=importances.sort_values(ascending=False)
+sns.barplot(x=top20,y=top20.index)
+~~~
