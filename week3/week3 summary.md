@@ -107,6 +107,7 @@
 ### 파이썬 래퍼 LightGBM과 사이킷런 래퍼 XGBoost, LightGBM 하이퍼 파라미터 비교
 
 |유형|파이썬 래퍼 LightGBM|사이킷런 래퍼 LightGBM|사이킷런 래퍼 XGBoost|
+|----|-------------------|---------------------|-------------------|
 |파라미터명|num_iterations|n_estimators|n_estimators|
 ||learning_rate|learning_rate|learning_rate|
 ||max_depth|max_depth|max_depth|
