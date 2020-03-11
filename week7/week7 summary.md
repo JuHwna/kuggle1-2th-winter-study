@@ -150,4 +150,17 @@
   - fit()과 transform()을 통해 피처 벡터화된 객체를 변환함
   - CountVectorizer의 입력 파라미터
   
-    
+    ![image](https://user-images.githubusercontent.com/49123169/76421261-be9fe800-63e6-11ea-981d-ff732e1b67a6.png)
+
+- CountVectorizer 클래스를 이용해 카운트 기반의 피처 여러 개의 문서로 구성된 텍스트의 피처 벡터화 방법
+  - 첫째, 영어의 경우 모든 문자를 소문자로 변경하는 등의 전처리 작업을 수행함
+  - 둘째, 디폴트로 단어 기준으로 n_gram_range를 반영해 각 단어를 토큰화함
+  - 셋째, 텍스트 정규화를 수행함
+  - 단, stop_words='english'와 같이 stop_words 파라미터가 주어진 경우 스톱 워드 필터링만 가능함
+  - Stemming과 Lemmatization 같은 어근 변환은 CountVectorizer에서 직접 지원하진 않으나 tokenizer 파라미터에 커스텀 어근 변환 함수를 적용하여 어근 변환을 수행할 수 있음
+  - 마지막으로 max_df,max_features 등의 파라미터를 이요해 토큰화된 단어를 피처로 추출하고 단어 빈도수 벡터 값을 적용함
+- TfidVectorizer 클래스 : 사이킷런에서 TF-IDF 벡터화
+  - 파라미터의 변환 방법은 CountVectorizer와 동일함
+  
+### BOW 벡터화를 위한 희소 행렬
+
