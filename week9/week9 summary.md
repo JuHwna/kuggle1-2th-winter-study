@@ -120,3 +120,9 @@
    4. 만족할 만한 오류 값을 가질 때까지 2,3번 작업을 반복하면서 P와 Q 값을 업데이트해 근사화함
    
 - 실제 값과 예측값의 오류 최소화와 L2 규제를 고려한 비용 함수식
+
+![image](https://user-images.githubusercontent.com/49123169/77406465-07e53400-6df8-11ea-941d-82e1b2702023.png)
+
+
+
+![image](https://user-images.githubusercontent.com/49123169/77406975-cb660800-6df8-11ea-8b87-5e83e9e03ed3.png)
